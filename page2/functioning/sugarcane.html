@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main1.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <img src="./background.jpg" id="image"> -->
+    <nav class="header">
+      <img src="logo.png" alt="logo" id="nav-logo">
+      <ul class="nav-about">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+    <div id="main">
+      <!-- <div class="master"></div> -->
+      <!-- <div class="content">
+              <div class="content1"></div>
+              <div class="content2">
+                <div class="content2-a"></div>
+                <div class="content2-b"></div>
+              </div>
+            <div class="less">
+
+          </div>
+
+          </div> -->
+      <div class="weather">
+        <h1 id="title">SUGARCANE</h1>
+        <hr>
+        <p class="text", id="content">• The best rainfall pattern for sugarcane is a moderate and consistent distribution throughout
+          its growth period. Extreme weather conditions, such as heavy rainfall or prolonged drought, can adversely
+          affect sugarcane yields.
+
+          <br>• Sugarcane can be grown in various types of soil, but the most suitable soil is one that is well-drained,
+          loamy, and rich in nutrients.
+
+          <br>• Sugarcane needs warm temperatures to grow properly, but it can tolerate some cooler and hotter periods.
+          Sugarcane grows best in temperatures between 75°F and 95°F (24°C to 35°C) during the growing season.
+
+          <br>• Drip irrigation with subsurface drip lines involves burying drip lines beneath the soil surface along
+          the sugarcane rows. This maximizes water efficiency and minimizes evaporation.
+        </p>
+
+        <button onclick="changeLanguage()">Change Language</button>
+        <script>
+          function changeLanguage() {
+            let title = document.getElementById('title');
+            let content = document.getElementById('content');
+    
+            // Get the current language of the page
+            let currentLang = document.documentElement.lang;
+    
+            // Toggle between English and Hindi
+            if (currentLang === 'en') {
+              // Change to Hindi
+              document.documentElement.lang = 'hi';
+              title.textContent = 'गन्ना';
+              content.textContent = 'गन्ने के लिए सर्वश्रेष्ठ वर्षा पैटर्न उसकी वृद्धि अवधि के दौरान माध्यम और संगत वितरण है। अत्यधिक मौसम की स्थितियाँ, जैसे भारी वर्षा या लंबे समय तक की सूखा, गन्ने की उत्पादन को अनुकूलता प्रभावित कर सकती हैं।• गन्ना विभिन्न प्रकार की मिट्टी में उगाया जा सकता है, लेकिन सबसे उपयुक्त मिट्टी वह है जो अच्छी ड्रेनेज, लूमी और पोषक तत्वों से भरपूर हो। • गन्ने को सही रूप से उगाने के लिए गर्म तापमान की आवश्यकता होती है, लेकिन यह कुछ ठंडे और गर्म अवधियों को सहन कर सकता है। गन्ने का सर्वोत्तम विकास समय के दौरान 75°F से 95°F (24°C से 35°C) के बीच तापमान में होता है।• सबसर्फेस ड्रिप लाइन के साथ ड्रिप इरिगेशन ड्रिप लाइन्स को मिट्टी के सतह के नीचे गन्ने की पंक्तियों के साथ दफन करने का आदान करता है। इससे पानी की कुशलता को अधिकतम किया जाता है और वाष्पीकरण को कम किया जाता है।';
+            } else {
+              // Change to English
+              document.documentElement.lang = 'en';
+              title.textContent = 'Sugarcane';
+              content.textContent = 'The best rainfall pattern for sugarcane is a moderate and consistent distribution throughout its growth period. Extreme weather conditions, such as heavy rainfall or prolonged drought, can adversely affect sugarcane yields.• Sugarcane can be grown in various types of soil, but the most suitable soil is one that is well-drained, loamy, and rich in nutrients. • Sugarcane needs warm temperatures to grow properly, but it can tolerate some cooler and hotter periods. Sugarcane grows best in temperatures between 75°F and 95°F (24°C to 35°C) during the growing season.• Drip irrigation with subsurface drip lines involves burying drip lines beneath the soil surface along the sugarcane rows. This maximizes water efficiency and minimizes evaporation.';
+            }
+          }
+        </script>
+    
+</body>
+
+</html>

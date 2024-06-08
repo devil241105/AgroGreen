@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main5.css">
+</head>
+<body>
+  <div class="container">
+    <!-- <img src="./background.jpg" id="image"> -->
+    <nav class="header">
+        <img src="logo.png" alt="logo" id="nav-logo">
+        <ul class="nav-about">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+       </nav>
+        <div id="main">
+          <!-- <div class="master"></div> -->
+            <!-- <div class="content">
+              <div class="content1"></div>
+              <div class="content2">
+                <div class="content2-a"></div>
+                <div class="content2-b"></div>
+              </div>
+            <div class="less">
+
+          </div>
+
+          </div> -->
+          <div class="weather">
+            <h1 id="title">COTTON</h1>
+            <hr>
+            <p class="text", id="content">The best rainfall pattern is moderate and consistent throughout the growth period. If there's too much rain, it can damage the crop. If there's too little rain, it can cause the cotton to dry out and not grow properly.
+
+                <br>• Cotton can be grown in various types of soil, but the most suitable soil is one that is well-drained, loamy, and rich in nutrients.
+                
+                <br>Cotton grows in the warm season, typically during the summer months when temperatures are moderate to warm. Extreme temperatures, both hot and cold, can harm the cotton crop.
+                
+               <br>• Furrow irrigation involves creating small channels (furrows) between cotton rows and allowing water to flow through them, directly to the plant roots. This ensures efficient use of water and minimizes soil erosion.</p>
+               <button onclick="changeLanguage()">Change Language</button>
+        <script>
+          function changeLanguage() {
+            let title = document.getElementById('title');
+            let content = document.getElementById('content');
+    
+            // Get the current language of the page
+            let currentLang = document.documentElement.lang;
+    
+            // Toggle between English and Hindi
+            if (currentLang === 'en') {
+              // Change to Hindi
+              document.documentElement.lang = 'hi';
+              title.textContent = 'रूई ';
+              content.textContent = 'सर्वश्रेष्ठ वर्षा पैटर्न माध्यम और वृद्धि अवधि के दौरान सतत होता है। अगर वर्षा अधिक होती है, तो यह फसल को नुकसान पहुंचा सकती है। अगर वर्षा बहुत कम होती है, तो यह कपास को सुखा सकती है और सही ढंग से नहीं उगने दे सकती है।• कपास को विभिन्न प्रकार की मिट्टी में उगाया जा सकता है, लेकिन सबसे उपयुक्त मिट्टी वह है जो अच्छी ड्रेनेज, लूमी और पोषक तत्वों से भरपूर हो।<br>कपास गर्म मौसम में उगता है, आमतौर पर गर्मियों के महीनों में जब तापमान मध्यम से गर्म होता है। अत्यधिक तापमान, गरमी और ठंड, दोनों कपास की फसल को हानि पहुंचा सकती है।• फरो इरिगेशन में कपास की पंक्तियों के बीच छोटे नाले (फरो) बनाने की शामिल होती है और पानी को सीधे पौधों की जड़ों तक फ्लो करने देती है। यह सुनिश्चित करता है कि पानी का अनुकूल उपयोग होता है और मिट्टी का अपघात कम होता है।';
+            } else {
+              // Change to English
+              document.documentElement.lang = 'en';
+              title.textContent = 'Cotton';
+              content.textContent = 'The best rainfall pattern is moderate and consistent throughout the growth period. If there\'s too much rain, it can damage the crop. If there\'s too little rain, it can cause the cotton to dry out and not grow properly• Cotton can be grown in various types of soil, but the most suitable soil is one that is well-drained, loamy, and rich in nutrients.Cotton grows in the warm season, typically during the summer months when temperatures are moderate to warm. Extreme temperatures, both hot and cold, can harm the cotton crop.• Furrow irrigation involves creating small channels (furrows) between cotton rows and allowing water to flow through them, directly to the plant roots. This ensures efficient use of water and minimizes soil erosion.';
+            }
+          }
+        </script>
+  
+</body>
+</html>

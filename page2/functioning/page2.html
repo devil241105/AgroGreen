@@ -1,0 +1,34 @@
+<!-- Page 2: Receiving Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receive Data</title>
+</head>
+<body>
+    <h1>Received Data</h1>
+    <div id="userData"></div>
+
+
+    <script>
+        // Function to get URL parameters
+        function getUrlParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return Object.fromEntries(urlParams.entries());
+        }
+
+        // Get URL parameters
+        const params = getUrlParams();
+
+        // Display received data
+        const userDataDiv = document.getElementById('userData');
+        for (const key in params) {
+            if (params.hasOwnProperty(key)) {
+                userDataDiv.innerHTML += `<p><strong>${key}:</strong> ${params[key]}</p>`;
+            }
+        }
+        console.log()
+    </script>
+</body>
+</html>

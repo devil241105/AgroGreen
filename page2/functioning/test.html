@@ -1,0 +1,30 @@
+<!-- Page 1: Sending Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Data</title>
+</head>
+<body>
+    <form id="myForm" action="page2.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById('username').value;
+            const age = document.getElementById('age').value;
+
+            // Redirect to page2.html with query parameters
+            window.location.href = `page2.html?username=${encodeURIComponent(username)}&age=${encodeURIComponent(age)}`;
+        });
+    </script>
+</body>
+</html>

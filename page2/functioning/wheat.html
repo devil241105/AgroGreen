@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main3.css">
+</head>
+<body>
+  <div class="container">
+    <!-- <img src="./background.jpg" id="image"> -->
+    <nav class="header">
+        <img src="logo.png" alt="logo" id="nav-logo">
+        <ul class="nav-about">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+       </nav>
+        <div id="main">
+          <!-- <div class="master"></div> -->
+            <!-- <div class="content">
+              <div class="content1"></div>
+              <div class="content2">
+                <div class="content2-a"></div>
+                <div class="content2-b"></div>
+              </div>
+            <div class="less">
+
+          </div>
+
+          </div> -->
+          <div class="weather">
+            <h1 id="title">WHEAT</h1>
+            <hr>
+            <p class="text", id="content"> •	Wheat has different water needs. The amount of water it needs depends on several factors such as how often it rains, the type of wheat, the kind of soil it's planted in, the temperature, and the amount of water available in the irrigation system and the soil. If there's not enough water, the wheat might not yield as much grain.
+                <br>•	Extreme temperatures, both hot and cold, can harm the wheat crop. Wheat grows in the cool season, during fall, winter, and early spring when temperatures are moderate. In areas with extreme temperatures, it may be necessary to adjust the planting time to avoid the hottest or coldest periods.
+                <br>•	Wheat needs around 15 to 25 inches (380 to 635 mm) of rainfall during its growing season. Rainfall should be well-distributed, especially during germination, tillering, and flowering stages. The best rainfall pattern is moderate and consistent throughout the growth period.
+                <br>•	Selecting the right soil is crucial for growing wheat. Wheat can be grown in various types of soil, but the most suitable soil is one that is loamy soil
+                <br>•	Pulse irrigation is used where water is supplied in repeated burst in short interval. This maintains soil moisture and prevents water logging</p>
+                <button onclick="changeLanguage()">Change Language</button>
+        <script>
+          function changeLanguage() {
+            let title = document.getElementById('title');
+            let content = document.getElementById('content');
+    
+            // Get the current language of the page
+            let currentLang = document.documentElement.lang;
+    
+            // Toggle between English and Hindi
+            if (currentLang === 'en') {
+              // Change to Hindi
+              document.documentElement.lang = 'hi';
+              title.textContent = 'गन्ना';
+              content.textContent = 'गन्ने के लिए सर्वश्रेष्ठ वर्षा पैटर्न उसकी वृद्धि अवधि के दौरान माध्यम और संगत वितरण है। अत्यधिक मौसम की स्थितियाँ, जैसे भारी वर्षा या लंबे समय तक की सूखा, गन्ने की उत्पादन को अनुकूलता प्रभावित कर सकती हैं। <br>• गन्ना विभिन्न प्रकार की मिट्टी में उगाया जा सकता है, लेकिन सबसे उपयुक्त मिट्टी वह है जो अच्छी ड्रेनेज, लूमी और पोषक तत्वों से भरपूर हो। <br>• गन्ने को सही रूप से उगाने के लिए गर्म तापमान की आवश्यकता होती है, लेकिन यह कुछ ठंडे और गर्म अवधियों को सहन कर सकता है। गन्ने का सर्वोत्तम विकास समय के दौरान 75°F से 95°F (24°C से 35°C) के बीच तापमान में होता है।<br>• सबसर्फेस ड्रिप लाइन के साथ ड्रिप इरिगेशन ड्रिप लाइन्स को मिट्टी के सतह के नीचे गन्ने की पंक्तियों के साथ दफन करने का आदान करता है। इससे पानी की कुशलता को अधिकतम किया जाता है और वाष्पीकरण को कम किया जाता है।';
+            } else {
+              // Change to English
+              document.documentElement.lang = 'en';
+              title.textContent = 'Wheat';
+              content.textContent = 'Wheat has different water needs. The amount of water it needs depends on several factors such as how often it rains, the type of wheat, the kind of soil it\'s planted in, the temperature, and the amount of water available in the irrigation system and the soil. If there\'s not enough water, the wheat might not yield as much grain. <br>•	Extreme temperatures, both hot and cold, can harm the wheat crop. Wheat grows in the cool season, during fall, winter, and early spring when temperatures are moderate. In areas with extreme temperatures, it may be necessary to adjust the planting time to avoid the hottest or coldest periods.<br>•	Wheat needs around 15 to 25 inches (380 to 635 mm) of rainfall during its growing season. Rainfall should be well-distributed, especially during germination, tillering, and flowering stages. The best rainfall pattern is moderate and consistent throughout the growth period.<br>•	Selecting the right soil is crucial for growing wheat. Wheat can be grown in various types of soil, but the most suitable soil is one that is loamy soil <br>•	Pulse irrigation is used where water is supplied in repeated burst in short interval. This maintains soil moisture and prevents water logging';
+            }
+          }
+        </script>
+  
+</body>
+</html>

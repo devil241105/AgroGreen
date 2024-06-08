@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main2.css">
+</head>
+<body>
+  <div class="container">
+    <!-- <img src="./background.jpg" id="image"> -->
+    <nav class="header">
+        <img src="logo.png" alt="logo" id="nav-logo">
+        <ul class="nav-about">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+       </nav>
+        <div id="main">
+          <!-- <div class="master"></div> -->
+            <!-- <div class="content">
+              <div class="content1"></div>
+              <div class="content2">
+                <div class="content2-a"></div>
+                <div class="content2-b"></div>
+              </div>
+            <div class="less">
+
+          </div>
+
+          </div> -->
+          <div class="weather">
+           <h1 id="title">RICE</h1>
+           <hr>
+           <p id="content">Rice grows best in temperatures between 70°F and 99°F (21°C and 37°C) during the growing season. Soil temperatures above 99°F (37°C) can harm the crop. You can only grow rice in places where the night temperature stays above 60°F (15°C) for at least three months each year.
+Rice needs a lot of water to grow, more than any other crop.** It's usually grown in places where it rains a lot throughout the year. The best places for growing rice are those where it rains frequently and heavily. The fields where rice grows need to be filled with water for at least 10 weeks when the rice is growing. The water can cover just the base of the rice plant when it's first planted and cover up to the middle of the plant during the rest of the growing period.
+<br>- Rice grows best in rich, well-drained soils that can hold onto moisture. Soil types can vary from sandy to clay.
+<br>- Rice growers have the responsibility of ensuring that their crop doesn’t dry out at any point during the growing season. By adopting efficient irrigation methods, you may greatly cut down on water waste-
+Weather Forecasting:
+
+<br>- Technique: Use weather forecasts to plan irrigation schedules.
+<br>- Benefits: Allows for better timing of irrigation events, reducing water wastage.
+<br>- How to Implement:
+<br>    - Regularly check weather forecasts.
+<br>    - Adjust irrigation schedules based on forecasted rainfall.
+
+Seasonal Adjustment:
+
+<br>- Technique: Adjust the irrigation schedule according to the growth stage and seasonal weather conditions.
+<br>- Benefits: Optimizes water use by providing water when it is most needed.
+<br>- How to Implement:
+<br>    - Increase irrigation frequency during the reproductive stage.
+</p> 
+<button onclick="changeLanguage()">Change Language</button>
+        <script>
+          function changeLanguage() {
+            let title = document.getElementById('title');
+            let content = document.getElementById('content');
+    
+            // Get the current language of the page
+            let currentLang = document.documentElement.lang;
+    
+            // Toggle between English and Hindi
+            if (currentLang === 'en') {
+              // Change to Hindi
+              document.documentElement.lang = 'hi';
+              title.textContent = 'चावल';
+              content.textContent = 'धान अपने पौधों के विकसित होने के मौसम में 70°F और 99°F (21°C और 37°C) के बीच सर्वोत्तम रूप से उगता है। मिट्टी का तापमान 99°F (37°C) से अधिक होने पर फसल को हानि पहुँच सकती है। धान को बढ़ने के लिए बहुत ज्यादा पानी की जरुरत होती है, अन्य किसी फसल से अधिक। यह आमतौर पर उन जगहों पर उगाया जाता है जहाँ साल भर में बारिश अधिक होती है। धान उगाने वाले खेतों को कम से कम 10 हफ्ते तक पानी से भरा रहना चाहिए जब धान बढ़ रहा होता है। पहली बार धान उगाया जाता है, तो पानी केवल धान के पौधे के नीचे हो सकता है और धान के अन्य समय में पौधे के बीच को भर सकता है। धान सबसे अच्छे धरातम से भरपूर, अच्छे निर्वहन वाली मिट्टियों में अच्छे रूप से उगता है। फरो इरिगेशन में कपास की पंक्तियों के बीच छोटे नालियाँ (फरो) बनाई जाती हैं और उनमें पानी को सीधे पौधों की जड़ों तक बहने दिया जाता है। यह सुनिश्चित करता है कि पानी का एक्सफिशिएंट उपयोग होता है और मिट्टी का उदरोधन कम होता है। मौसम पूर्वानुमान विधि इस्तेमाल करें। मौसमिक समायोजन करें।';
+            } else {
+              // Change to English
+              document.documentElement.lang = 'en';
+              title.textContent = 'Rice';
+              content.textContent = 'Rice grows best in temperatures between 70°F and 99°F (21°C and 37°C) during the growing season. Soil temperatures above 99°F (37°C) can harm the crop. You can only grow rice in places where the night temperature stays above 60°F (15°C) for at least three months each year. Rice needs a lot of water to grow, more than any other crop. It\'s usually grown in places where it rains a lot throughout the year. The best places for growing rice are those where it rains frequently and heavily. The fields where rice grows need to be filled with water for at least 10 weeks when the rice is growing. The water can cover just the base of the rice plant when it\'s first planted and cover up to the middle of the plant during the rest of the growing period.\n- Rice grows best in rich, well-drained soils that can hold onto moisture. Soil types can vary from sandy to clay.\n - Rice growers have the responsibility of ensuring that their crop doesn’t dry out at any point during the growing season. By adopting efficient irrigation methods, you may greatly cut down on water waste- \nWeather Forecasting:\n- Technique: Use weather forecasts to plan irrigation schedules.\n- Benefits: Allows for better timing of irrigation events, reducing water wastage\n- How to Implement:\n- Regularly check weather forecasts.\n- Adjust irrigation schedules based on forecasted rainfall.\nSeasonal Adjustment:\n- Technique: Adjust the irrigation schedule according to the growth stage and seasonal weather conditions.\n- Benefits: Optimizes water use by providing water when it is most needed.\n- How to Implement:\n- Increase irrigation frequency during the reproductive stage.\n- Reduce irrigation during periods of heavy rainfall.';
+            }
+          }
+        </script>
+</body>
+</html>
